@@ -1,6 +1,6 @@
 if game.PlaceId == 9391468976 then
     
-    local Rayfield = loadstring(game:HttpGet('https://[Log in to view URL]'))()
+    local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
     local Window = Rayfield:CreateWindow({
        Name = "Jujutsu shenanigans leak",
