@@ -1,0 +1,109 @@
+if game.PlaceId == 9391468976 then
+    
+    local Rayfield = loadstring(game:HttpGet('https://[Log in to view URL]'))()
+
+    local Window = Rayfield:CreateWindow({
+       Name = "Jujutsu shenanigans leak",
+       LoadingTitle = "jjs leak hub",
+       LoadingSubtitle = "by Van1chh",
+       ConfigurationSaving = {
+          Enabled = false,
+          FolderName = nil, -- Create a custom folder for your hub/game
+          FileName = "jjsLeaks"
+       },
+       Discord = {
+          Enabled = true,
+          Invite = "kk3BHvcch8", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+          RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+       },
+       KeySystem = true, -- Set this to true to use our key system
+       KeySettings = {
+          Title = "jjk key",
+          Subtitle = "Key in the discord server",
+          Note = "Join discord server for key",
+          FileName = "JjsleakKey", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+          SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+          GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+          Key = {"https://[Log in to view URL]"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+       }
+    })
+    
+    local LeakTab = Window:CreateTab("Leaks", nil) -- Title, Image
+    local Leak = LeakTab:CreateSection("Leaks")
+
+    local MiwaM1 = LeakTab:CreateButton({
+       Name = "Miwa hit(M1)",
+       Callback = function()
+        local player = game:GetService("Players").LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:WaitForChild("Humanoid")
+        local animator = humanoid:WaitForChild("Animator")
+        local MiwaM1 = Instance.new("Animation")
+        MiwaM1.AnimationId = "rbxassetid://17661539923"
+        local MiwaM1Track = animator:LoadAnimation(MiwaM1)              
+        local MiwaM1Sound = game:GetService("ReplicatedStorage").Sounds.Miwa.M1.Hit1
+        MiwaM1Sound:play()
+        MiwaM1Track:Play()
+       end,
+    })
+    
+    local MiwaExorciseButton = LeakTab:CreateButton({
+       Name = "Miwa Exorcise",
+       Callback = function()
+        local player = game:GetService("Players").LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:WaitForChild("Humanoid")
+        local animator = humanoid:WaitForChild("Animator")
+        local MiwaExorcise = Instance.new("Animation")
+        MiwaExorcise.AnimationId = "rbxassetid://14228484629"
+        local MiwaExorciseTrack = animator:LoadAnimation(MiwaExorcise)
+        
+        local MiwaExorciseSound = game:GetService("ReplicatedStorage").Sounds.Miwa.M1.Hit1
+        
+        MiwaExorciseTrack:Play()
+        task.wait(0.45)
+        MiwaExorciseSound:play()
+       end,
+    })
+    
+    local MiwaHairpinButton = LeakTab:CreateButton({
+       Name = "Miwa Hairpin",
+       Callback = function()
+        local player = game:GetService("Players").LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:WaitForChild("Humanoid")
+        local animator = humanoid:WaitForChild("Animator")
+        local MiwaHairpin = Instance.new("Animation")
+        MiwaHairpin.AnimationId = "rbxassetid://14232670940"
+        local MiwaHairpinTrack = animator:LoadAnimation(MiwaHairpin)
+
+        local MiwaHairpinSound = game:GetService("ReplicatedStorage").Sounds.Gojo.BlindsOff
+
+        MiwaHairpinTrack:Play()
+        task.wait(0.1)
+        MiwaHairpinSound:play()
+       end,
+    })
+
+    local MiwaQuickDrawButton = LeakTab:CreateButton({
+       Name = "Miwa Quick Draw",
+       Callback = function()
+        local player = game:GetService("Players").LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:WaitForChild("Humanoid")
+        local animator = humanoid:WaitForChild("Animator")
+        local MiwaQuickDraw = Instance.new("Animation")
+        MiwaQuickDraw.AnimationId = "rbxassetid://17662163909"
+        local MiwaQuickDrawTrack = animator:LoadAnimation(MiwaQuickDraw)
+        
+        local MiwaQuickDrawSound1 = game:GetService("ReplicatedStorage").Sounds.Miwa.M1.Hit1
+        local MiwaQuickDrawSound2 = game:GetService("ReplicatedStorage").Sounds.Megumi.Nue.Despawn
+
+        MiwaQuickDrawTrack:Play()
+        MiwaQuickDrawSound2:Play()
+        task.wait(1)
+        MiwaQuickDrawSound1:Play()
+       end,
+    })
+    
+end
